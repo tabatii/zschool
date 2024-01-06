@@ -9,7 +9,7 @@
     </head>
     <body class="overflow-x-hidden">
         <header class="flex items-center h-32">
-            <div class="container">
+            <div class="container px-3">
                 <div class="flex justify-between items-center">
                     <div>
                         <a href="{{ route('home') }}">
