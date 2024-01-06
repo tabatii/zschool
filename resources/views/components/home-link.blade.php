@@ -1,0 +1,1 @@
+<x-filament::button :href="route('home')" tag="a" color="gray">Return to home page</x-filament::link>

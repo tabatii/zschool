@@ -1,0 +1,36 @@
+@import '/vendor/filament/filament/resources/css/theme.css';
+@config 'tailwind.config.js';
+
+
+.fi .fi-user-avatar {
+    @apply h-9 w-9;
+}
+
+.calendar-session .fi-icon-btn {
+    @apply h-auto w-auto;
+}
+
+.range-field::-webkit-slider-thumb {
+    @apply appearance-none bg-current rounded-full cursor-pointer h-4 w-4;
+}
+
+.range-field::-moz-range-thumb {
+    @apply bg-current border-0 cursor-pointer h-4 w-4;
+}
+
+.tooltip {
+    @apply absolute bottom-[calc(100%+2px)] invisible opacity-0 hover:!invisible hover:!opacity-0 group-hover:visible group-hover:opacity-100;
+    @apply bg-black text-center text-white text-xs whitespace-nowrap transition-all duration-300 rounded-full overflow-hidden py-1;
+}
+
+.fading {
+    animation-name: fading;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fading {
+    0% {opacity: 1;}
+    50% {opacity: .25;}
+    100% {opacity: 1;}
+}
