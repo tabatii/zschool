@@ -24,6 +24,11 @@ if (env('APP_ENV') !== 'production') {
     // create storage shortcut
     Route::get('artisan/storage/link', fn () => Artisan::call('storage:link'));
 
+    // migrate database
+    Route::get('artisan/migrate', function (Request $request) {
+        return Artisan::call('migrate');
+    });
+
     // refresh database
     Route::get('artisan/migrate/fresh', function (Request $request) {
         return Artisan::call('migrate:fresh', [
