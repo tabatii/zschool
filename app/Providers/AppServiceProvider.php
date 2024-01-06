@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Support\Facades\FilamentAsset;
@@ -39,6 +40,10 @@ class AppServiceProvider extends ServiceProvider
             Css::make('handlee-font', 'https://fonts.googleapis.com/css2?family=Handlee&display=swap'),
             Js::make('moment-js', 'https://momentjs.com/downloads/moment.js'),
         ]);
+        FilamentView::registerRenderHook(
+            'panels::head.end',
+            fn (): string => Blade::render('@laravelPWA'),
+        );
         FilamentView::registerRenderHook(
             'panels::auth.login.form.after',
             fn (): View => view('components.home-link'),
