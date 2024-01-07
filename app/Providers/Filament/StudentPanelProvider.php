@@ -71,6 +71,7 @@ class StudentPanelProvider extends PanelProvider
             ->darkMode(false)
             ->brandLogo(asset('assets/logo.png'))
             ->brandLogoHeight('3.5rem')
-            ->brandName('E-school Student');
+            ->brandName('E-school Student')
+            ->spa();
     }
 }

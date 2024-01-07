@@ -72,6 +72,7 @@ class GuardianPanelProvider extends PanelProvider
             ->darkMode(false)
             ->brandLogo(asset('assets/logo.png'))
             ->brandLogoHeight('3.5rem')
-            ->brandName('E-school Parent');
+            ->brandName('E-school Parent')
+            ->spa();
     }
 }
