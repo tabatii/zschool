@@ -16,7 +16,6 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/', fn () => view('home'))->name('home');
-Route::get('offline', fn () => view('laravelpwa::offline'))->name('offline');
 
 if (env('APP_ENV') !== 'production') {
     // view pdf
