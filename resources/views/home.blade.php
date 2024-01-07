@@ -6,6 +6,7 @@
         <title>{{ $title ?? 'Home' }}</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
         @vite('resources/css/app.css')
+        @laravelPWA
     </head>
     <body class="overflow-x-hidden">
         <header class="flex items-center h-32">
