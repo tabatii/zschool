@@ -15,7 +15,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/', fn () => view('home'))->name('home');
+Route::get('/', \App\Livewire\Home::class)->name('home');
 
 if (env('APP_ENV') !== 'production') {
     // view pdf
