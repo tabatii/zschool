@@ -13,9 +13,7 @@
             <div class="container px-3">
                 <div class="flex justify-between items-center">
                     <div>
-                        <a href="{{ route('home') }}">
-                            <img src="{{ asset('assets/logo.png') }}" class="h-16" draggable="false" />
-                        </a>
+                        <img src="{{ asset('assets/logo.png') }}" class="h-16" draggable="false" />
                     </div>
                     <div class="flex flex-wrap gap-2">
                         <a href="#login" @class([
@@ -76,7 +74,7 @@
                 <h2 class="text-4xl text-center mb-8 sm:mb-16">Sign in to the platform</h2>
                 <div class="flex flex-wrap gap-y-6 -mx-3">
                     <div class="w-full sm:w-6/12 lg:w-3/12 px-3">
-                        <a href="{{ panel('admin')->getLoginUrl() }}" class="relative block pb-[100%]">
+                        <a href="{{ panel('admin')->getLoginUrl() }}" class="relative block pb-[100%]" wire:navigate>
                             <div class="absolute inset-0 flex items-center bg-orange-50 text-orange-500 rounded-xl">
                                 <div class="w-full">
                                     <div class="flex justify-center mb-4">
@@ -90,7 +88,7 @@
                         </a>
                     </div>
                     <div class="w-full sm:w-6/12 lg:w-3/12 px-3">
-                        <a href="{{ panel('teacher')->getLoginUrl() }}" class="relative block pb-[100%]">
+                        <a href="{{ panel('teacher')->getLoginUrl() }}" class="relative block pb-[100%]" wire:navigate>
                             <div class="absolute inset-0 flex items-center bg-blue-50 text-blue-500 rounded-xl">
                                 <div class="w-full">
                                     <div class="flex justify-center mb-4">
@@ -104,7 +102,7 @@
                         </a>
                     </div>
                     <div class="w-full sm:w-6/12 lg:w-3/12 px-3">
-                        <a href="{{ panel('student')->getLoginUrl() }}" class="relative block pb-[100%]">
+                        <a href="{{ panel('student')->getLoginUrl() }}" class="relative block pb-[100%]" wire:navigate>
                             <div class="absolute inset-0 flex items-center bg-cyan-50 text-cyan-500 rounded-xl">
                                 <div class="w-full">
                                     <div class="flex justify-center mb-4">
@@ -118,7 +116,7 @@
                         </a>
                     </div>
                     <div class="w-full sm:w-6/12 lg:w-3/12 px-3">
-                        <a href="{{ panel('guardian')->getLoginUrl() }}" class="relative block pb-[100%]">
+                        <a href="{{ panel('guardian')->getLoginUrl() }}" class="relative block pb-[100%]" wire:navigate>
                             <div class="absolute inset-0 flex items-center bg-teal-50 text-teal-500 rounded-xl">
                                 <div class="w-full">
                                     <div class="flex justify-center mb-4">
