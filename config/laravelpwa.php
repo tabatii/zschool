@@ -66,11 +66,6 @@ return [
                     "src" => "/images/icons/icon-72x72.png",
                     "purpose" => "any"
                 ]
-            ],
-            [
-                'name' => 'Shortcut Link 2',
-                'description' => 'Shortcut Link 2 Description',
-                'url' => '/shortcutlink2'
             ]
         ],
         'custom' => []
