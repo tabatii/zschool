@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.za.e_school.twa",
+    "sha256_cert_fingerprints": ["F0:77:D6:F6:BB:EA:46:0E:92:4C:1C:D7:FA:95:87:C8:B2:AA:5D:98:B1:EB:55:FA:2E:78:1F:51:E7:87:66:68"]
+  }
+}]
