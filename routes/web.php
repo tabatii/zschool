@@ -15,7 +15,8 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/', \App\Livewire\Home::class)->name('home');
+Route::view('/', 'home')->name('home');
+Route::view('privacy-policy', 'privacy-policy')->name('privacy-policy');
 
 if (env('APP_ENV') !== 'production') {
     // view pdf
